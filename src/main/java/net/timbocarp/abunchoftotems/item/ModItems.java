@@ -20,11 +20,16 @@ public class ModItems {
     }
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries){
-        entries.add(TOTEM_OF_FORTUNE);
+
+    }
+
+    private static void addItemsToToolsTabItemGroup(FabricItemGroupEntries entries){
+        entries.add(ModItems.TOTEM_OF_FORTUNE);
     }
 
     public static void registerModItems(){
         ABunchOfTotems.LOGGER.info("Registering mod items for " + ABunchOfTotems.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsTabItemGroup);
     }
 }

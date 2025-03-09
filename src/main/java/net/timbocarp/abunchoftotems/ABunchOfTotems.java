@@ -2,6 +2,7 @@ package net.timbocarp.abunchoftotems;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.timbocarp.abunchoftotems.item.ModItemGroups;
 import net.timbocarp.abunchoftotems.item.ModItems;
 import net.timbocarp.abunchoftotems.util.ModLootTableModifiers;
 import org.slf4j.Logger;
@@ -15,6 +16,7 @@ public class ABunchOfTotems implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
+		ModItemGroups.registerItemGroups();
 		ModLootTableModifiers.modifyLootTables();
 	}
 }
