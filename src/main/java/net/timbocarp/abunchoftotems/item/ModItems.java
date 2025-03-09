@@ -11,12 +11,15 @@ import net.minecraft.util.Identifier;
 import net.timbocarp.abunchoftotems.ABunchOfTotems;
 import net.timbocarp.abunchoftotems.item.custom.TotemOfFortuneItem;
 import net.timbocarp.abunchoftotems.item.custom.TotemOfJammingItem;
+import net.timbocarp.abunchoftotems.item.custom.TotemOfReturnalItem;
 
 public class ModItems {
     public static final Item TOTEM_OF_FORTUNE = registerItem("totem_of_fortune",
             new TotemOfFortuneItem(new FabricItemSettings().maxDamage(15)));
     public static final Item TOTEM_OF_JAMMING = registerItem("totem_of_jamming",
             new TotemOfJammingItem(new FabricItemSettings()));
+    public static final Item TOTEM_OF_RETURNAL = registerItem("totem_of_returnal",
+            new TotemOfReturnalItem(new FabricItemSettings().maxDamage(3)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -29,6 +32,7 @@ public class ModItems {
     private static void addItemsToToolsTabItemGroup(FabricItemGroupEntries entries){
         entries.add(ModItems.TOTEM_OF_FORTUNE);
         entries.add(ModItems.TOTEM_OF_JAMMING);
+        entries.add(ModItems.TOTEM_OF_RETURNAL);
     }
 
     public static void registerModItems(){

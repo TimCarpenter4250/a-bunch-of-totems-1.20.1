@@ -15,6 +15,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.TOTEM_OF_FORTUNE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.TOTEM_OF_FORTUNE);
                         entries.add(ModItems.TOTEM_OF_JAMMING);
+                        entries.add(ModItems.TOTEM_OF_RETURNAL);
 
 
                     }).build());
