@@ -1,6 +1,5 @@
 package net.timbocarp.abunchoftotems.item.custom;
 
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -43,7 +42,6 @@ public class TotemOfFortuneItem extends Item {
 
         user.incrementStat(Stats.USED.getOrCreateStat(this));
         if (!user.getAbilities().creativeMode) {
-            //itemStack.decrement(1);
             itemStack.setDamage(itemStack.getDamage() + 1);
             if(itemStack.getDamage() == 16){
                 itemStack.decrement(1);

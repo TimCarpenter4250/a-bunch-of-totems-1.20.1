@@ -14,6 +14,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.totems"))
                     .icon(() -> new ItemStack(ModItems.TOTEM_OF_FORTUNE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.TOTEM_OF_FORTUNE);
+                        entries.add(ModItems.TOTEM_OF_JAMMING);
 
 
                     }).build());
