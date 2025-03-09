@@ -1,16 +1,13 @@
 package net.timbocarp.abunchoftotems.item.custom;
 
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
-import net.minecraft.text.Style;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -19,11 +16,6 @@ import net.minecraft.world.World;
 public class TotemOfJammingItem extends Item {
     public TotemOfJammingItem(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public boolean isDamageable() {
-        return true;
     }
 
     @Override
@@ -49,9 +41,47 @@ public class TotemOfJammingItem extends Item {
                 1.0F
         );
 
+        // particles
+        world.addParticle(
+                ParticleTypes.NOTE,
+                user.getX() + 0.75,
+                user.getY() + 1,
+                user.getZ() + 0.75,
+                0.0,
+                0.0,
+                0.0
+        );
+        world.addParticle(
+                ParticleTypes.NOTE,
+                user.getX() - 0.75,
+                user.getY() + 0.7,
+                user.getZ() + 0.75,
+                0.0,
+                0.0,
+                0.0
+        );
+        world.addParticle(
+                ParticleTypes.NOTE,
+                user.getX() + 0.75,
+                user.getY() + 0.5,
+                user.getZ() - 0.75,
+                0.0,
+                0.0,
+                0.0
+        );
+        world.addParticle(
+                ParticleTypes.NOTE,
+                user.getX() - 0.75,
+                user.getY() + 0.3,
+                user.getZ() - 0.75,
+                0.0,
+                0.0,
+                0.0
+        );
+
         user.getItemCooldownManager().set(this, 40);
 
-        // kinda ugly but this is the only thing i could figure out lol
+        // kinda ugly but this is the only thing that worked lol
         if(randomDisc == SoundEvents.MUSIC_DISC_CAT){
             user.sendMessage(Text.literal("Now Playing: C418 - cat"), true);
         }
