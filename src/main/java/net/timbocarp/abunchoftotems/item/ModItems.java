@@ -1,0 +1,30 @@
+package net.timbocarp.abunchoftotems.item;
+
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import net.timbocarp.abunchoftotems.ABunchOfTotems;
+import net.timbocarp.abunchoftotems.item.custom.TotemOfFortuneItem;
+
+public class ModItems {
+    public static final Item TOTEM_OF_FORTUNE = registerItem("totem_of_fortune",
+            new TotemOfFortuneItem(new FabricItemSettings().maxDamage(15)));
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
+    }
+
+    private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries){
+        entries.add(TOTEM_OF_FORTUNE);
+    }
+
+    public static void registerModItems(){
+        ABunchOfTotems.LOGGER.info("Registering mod items for " + ABunchOfTotems.MOD_ID);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTabItemGroup);
+    }
+}

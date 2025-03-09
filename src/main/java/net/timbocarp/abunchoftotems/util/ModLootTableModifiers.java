@@ -1,0 +1,40 @@
+package net.timbocarp.abunchoftotems.util;
+
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.minecraft.data.server.loottable.vanilla.VanillaFishingLootTableGenerator;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.util.Identifier;
+import net.timbocarp.abunchoftotems.ABunchOfTotems;
+import net.timbocarp.abunchoftotems.item.ModItems;
+
+public class ModLootTableModifiers {
+    private static final Identifier JUNGLE_TEMPLE_ID =
+            new Identifier("minecraft", "chests/jungle_temple");
+//    private static final Identifier FISHING_JUNK_ID =
+//            new Identifier("minecraft", "gameplay/fishing/junk");
+//    private static final Identifier FISHING_TREASURE_ID =
+//            new Identifier("minecraft", "gameplay/fishing/treasure");
+
+    public static void modifyLootTables(){
+        ABunchOfTotems.LOGGER.info("Modifying loot tables");
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
+
+            if(JUNGLE_TEMPLE_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.55f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_FORTUNE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+
+
+        });
+    }
+}

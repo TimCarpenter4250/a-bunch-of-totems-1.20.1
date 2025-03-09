@@ -2,6 +2,8 @@ package net.timbocarp.abunchoftotems;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.timbocarp.abunchoftotems.item.ModItems;
+import net.timbocarp.abunchoftotems.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +14,7 @@ public class ABunchOfTotems implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModLootTableModifiers.modifyLootTables();
 	}
 }
