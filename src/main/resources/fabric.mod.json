@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "abunchoftotems",
+	"version": "${version}",
+	"name": "A Bunch Of Totems",
+	"description": "Adds many new totems to Minecraft!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/abunchoftotems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.timbocarp.abunchoftotems.ABunchOfTotems"
+		],
+		"client": [
+			"net.timbocarp.abunchoftotems.ABunchOfTotemsClient"
+		],
+		"fabric-datagen": [
+			"net.timbocarp.abunchoftotems.ABunchOfTotemsDataGenerator"
+		]
+	},
+	"mixins": [
+		"abunchoftotems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
