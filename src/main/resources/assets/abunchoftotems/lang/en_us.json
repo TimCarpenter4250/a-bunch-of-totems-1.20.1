@@ -10,6 +10,7 @@
   "item.abunchoftotems.totem_of_resilience": "Totem of Resilience",
   "item.abunchoftotems.totem_of_wisdom": "Totem of Wisdom",
   "item.abunchoftotems.totem_of_conductivity": "Totem of Conductivity",
+  "item.abunchoftotems.totem_of_time": "Totem of Time",
 
   "tooltip.abunchoftotems.totem_of_fortune.tooltip": "Right-click to grant Luck for 30 seconds",
   "tooltip.abunchoftotems.totem_of_jamming.tooltip": "Right-click to play a random music disc!",
@@ -20,5 +21,6 @@
   "tooltip.abunchoftotems.totem_of_resilience.tooltip": "Right-click to consume and gain invulnerability for 10 seconds",
   "tooltip.abunchoftotems.totem_of_wisdom.tooltip": "Right-click to consume and gain 25 levels",
   "tooltip.abunchoftotems.totem_of_conductivity.tooltip1": "Hold right-click to charge, then release to strike",
-  "tooltip.abunchoftotems.totem_of_conductivity.tooltip2": "lightning at your crosshair (128-block range)"
+  "tooltip.abunchoftotems.totem_of_conductivity.tooltip2": "lightning at your crosshair (128-block range)",
+  "tooltip.abunchoftotems.totem_of_time.tooltip": "Hold right-click to rapidly speed up the day/night cycle"
 }

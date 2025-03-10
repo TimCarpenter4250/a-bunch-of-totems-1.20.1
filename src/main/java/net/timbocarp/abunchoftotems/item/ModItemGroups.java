@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_RESILIENCE);
                         entries.add(ModItems.TOTEM_OF_WISDOM);
                         entries.add(ModItems.TOTEM_OF_CONDUCTIVITY);
+                        entries.add(ModItems.TOTEM_OF_TIME);
 
 
                     }).build());
