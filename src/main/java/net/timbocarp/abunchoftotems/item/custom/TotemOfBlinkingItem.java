@@ -29,7 +29,7 @@ public class TotemOfBlinkingItem extends Item {
     }
 
     public static BlockHitResult getTargetedBlockPos(ServerPlayerEntity player) {
-        double maxDistance = 96; // 96 blocks = 6 chunks
+        double maxDistance = 128; // 128 blocks = 8 chunks
         HitResult hit = player.raycast(maxDistance, 0, false);
 
         if (hit instanceof BlockHitResult blockHit) {
