@@ -32,6 +32,10 @@ public class ModItems {
             new TotemOfConductivityItem(new FabricItemSettings().maxDamage(31)));
     public static final Item TOTEM_OF_THE_COSMOS = registerItem("totem_of_the_cosmos",
             new TotemOfTheCosmosItem(new FabricItemSettings().maxDamage(2559)));
+    public static final Item TOTEM_OF_THE_DEFIANT = registerItem("totem_of_the_defiant",
+            new TotemOfTheDefiantItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TOTEM_OF_THE_COWARDLY = registerItem("totem_of_the_cowardly",
+            new TotemOfTheCowardlyItem(new FabricItemSettings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -40,6 +44,8 @@ public class ModItems {
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries){
         entries.add(ModItems.TOTEM_OF_VITALITY);
         entries.add(ModItems.TOTEM_OF_RESILIENCE);
+        entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
+        entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
     }
 
     private static void addItemsToToolsTabItemGroup(FabricItemGroupEntries entries){
@@ -53,6 +59,8 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_WISDOM);
         entries.add(ModItems.TOTEM_OF_CONDUCTIVITY);
         entries.add(ModItems.TOTEM_OF_THE_COSMOS);
+        entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
+        entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
     }
 
     public static void registerModItems(){

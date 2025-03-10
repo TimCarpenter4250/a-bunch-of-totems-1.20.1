@@ -23,6 +23,8 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_WISDOM);
                         entries.add(ModItems.TOTEM_OF_CONDUCTIVITY);
                         entries.add(ModItems.TOTEM_OF_THE_COSMOS);
+                        entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
+                        entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
 
 
                     }).build());
