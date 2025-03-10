@@ -17,6 +17,8 @@ public class ModLootTableModifiers {
             new Identifier("minecraft", "chests/jungle_temple");
     private static final Identifier END_CITY_ID =
             new Identifier("minecraft", "chests/end_city_treasure");
+    private static final Identifier ANCIENT_CITY_ID =
+            new Identifier("minecraft", "chests/ancient_city");
 //    private static final Identifier FISHING_JUNK_ID =
 //            new Identifier("minecraft", "gameplay/fishing/junk");
 //    private static final Identifier FISHING_TREASURE_ID =
@@ -40,6 +42,15 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.10f))
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_BLINKING))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(ANCIENT_CITY_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.07f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_RESILIENCE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

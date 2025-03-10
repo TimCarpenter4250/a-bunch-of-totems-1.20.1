@@ -7,14 +7,14 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
-import net.timbocarp.abunchoftotems.item.ModItems;
+import net.timbocarp.abunchoftotems.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.function.Predicate;
 
 public class AbstractChargeItem extends BowItem {
-    public static final Predicate<ItemStack> TOTEM_PROJECTILES = stack -> stack.isOf(ModItems.TOTEM_OF_VITALITY);
+    public static final Predicate<ItemStack> TOTEM_PROJECTILES = stack -> stack.isIn(ModTags.Items.CHARGE_TOTEM_ITEMS);
 
     public AbstractChargeItem(Settings settings) {
         super(settings);
