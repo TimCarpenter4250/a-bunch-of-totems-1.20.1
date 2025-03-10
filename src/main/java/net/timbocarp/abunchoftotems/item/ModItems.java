@@ -24,13 +24,16 @@ public class ModItems {
             new TotemOfBlinkingItem(new FabricItemSettings().maxDamage(63)));
     public static final Item TOTEM_OF_VITALITY = registerItem("totem_of_vitality",
             new TotemOfVitalityItem(new FabricItemSettings().maxDamage(127)));
+    public static final Item TOTEM_OF_RESILIENCE = registerItem("totem_of_resilience",
+            new TotemOfResilienceItem(new FabricItemSettings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
     }
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries){
-
+        entries.add(ModItems.TOTEM_OF_VITALITY);
+        entries.add(ModItems.TOTEM_OF_RESILIENCE);
     }
 
     private static void addItemsToToolsTabItemGroup(FabricItemGroupEntries entries){
@@ -40,6 +43,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_THE_UNSEEN);
         entries.add(ModItems.TOTEM_OF_BLINKING);
         entries.add(ModItems.TOTEM_OF_VITALITY);
+        entries.add(ModItems.TOTEM_OF_RESILIENCE);
     }
 
     public static void registerModItems(){

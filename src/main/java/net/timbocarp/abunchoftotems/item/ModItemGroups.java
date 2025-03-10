@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_THE_UNSEEN);
                         entries.add(ModItems.TOTEM_OF_BLINKING);
                         entries.add(ModItems.TOTEM_OF_VITALITY);
+                        entries.add(ModItems.TOTEM_OF_RESILIENCE);
 
 
                     }).build());
