@@ -69,6 +69,11 @@ public class TotemOfVitalityItem extends BowItem {
     }
 
     @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return false;
+    }
+
+    @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("tooltip.abunchoftotems.totem_of_vitality.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
