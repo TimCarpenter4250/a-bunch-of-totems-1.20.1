@@ -10,6 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
+import net.timbocarp.abunchoftotems.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -22,7 +23,7 @@ public class TotemOfTheUnseenItem extends Item {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         LivingEntity holder = (LivingEntity) entity;
-        if(selected) {
+        if(selected || holder.getOffHandStack().isOf(ModItems.TOTEM_OF_THE_UNSEEN)) {
             holder.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 2, 0, true, false, true));
         }
     }
