@@ -22,6 +22,8 @@ public class ModItems {
             new TotemOfTheUnseenItem(new FabricItemSettings().maxCount(1)));
     public static final Item TOTEM_OF_BLINKING = registerItem("totem_of_blinking",
             new TotemOfBlinkingItem(new FabricItemSettings().maxDamage(63)));
+    public static final Item TOTEM_OF_VITALITY = registerItem("totem_of_vitality",
+            new TotemOfVitalityItem(new FabricItemSettings().maxDamage(127)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -37,6 +39,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_RETURNAL);
         entries.add(ModItems.TOTEM_OF_THE_UNSEEN);
         entries.add(ModItems.TOTEM_OF_BLINKING);
+        entries.add(ModItems.TOTEM_OF_VITALITY);
     }
 
     public static void registerModItems(){
