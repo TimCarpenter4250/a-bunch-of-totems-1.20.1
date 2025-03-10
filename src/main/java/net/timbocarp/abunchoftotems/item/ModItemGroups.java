@@ -17,6 +17,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_JAMMING);
                         entries.add(ModItems.TOTEM_OF_RETURNAL);
                         entries.add(ModItems.TOTEM_OF_THE_UNSEEN);
+                        entries.add(ModItems.TOTEM_OF_BLINKING);
 
 
                     }).build());

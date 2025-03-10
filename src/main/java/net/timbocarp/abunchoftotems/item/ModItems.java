@@ -9,10 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.timbocarp.abunchoftotems.ABunchOfTotems;
-import net.timbocarp.abunchoftotems.item.custom.TotemOfFortuneItem;
-import net.timbocarp.abunchoftotems.item.custom.TotemOfJammingItem;
-import net.timbocarp.abunchoftotems.item.custom.TotemOfReturnalItem;
-import net.timbocarp.abunchoftotems.item.custom.TotemOfTheUnseenItem;
+import net.timbocarp.abunchoftotems.item.custom.*;
 
 public class ModItems {
     public static final Item TOTEM_OF_FORTUNE = registerItem("totem_of_fortune",
@@ -23,6 +20,8 @@ public class ModItems {
             new TotemOfReturnalItem(new FabricItemSettings().maxDamage(3)));
     public static final Item TOTEM_OF_THE_UNSEEN = registerItem("totem_of_the_unseen",
             new TotemOfTheUnseenItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TOTEM_OF_BLINKING = registerItem("totem_of_blinking",
+            new TotemOfBlinkingItem(new FabricItemSettings().maxDamage(63)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -37,6 +36,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_JAMMING);
         entries.add(ModItems.TOTEM_OF_RETURNAL);
         entries.add(ModItems.TOTEM_OF_THE_UNSEEN);
+        entries.add(ModItems.TOTEM_OF_BLINKING);
     }
 
     public static void registerModItems(){
