@@ -3,30 +3,19 @@ package net.timbocarp.abunchoftotems.item.custom;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.BowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
 import net.minecraft.text.Text;
-import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
-import net.timbocarp.abunchoftotems.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
-import java.util.function.Predicate;
 
-public class TotemOfVitalityItem extends BowItem {
-    public static final Predicate<ItemStack> TOTEM_PROJECTILES = stack -> stack.isOf(ModItems.TOTEM_OF_VITALITY);
-
+public class TotemOfVitalityItem extends AbstractChargeItem {
     public TotemOfVitalityItem(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public boolean isDamageable() {
-        return true;
     }
 
     @Override
@@ -57,30 +46,9 @@ public class TotemOfVitalityItem extends BowItem {
         }
     }
 
-
-    @Override
-    public void onStoppedUsing(ItemStack stack, World world, LivingEntity user, int remainingUseTicks) {
-
-    }
-
-    @Override
-    public Predicate<ItemStack> getProjectiles() {
-        return TOTEM_PROJECTILES;
-    }
-
-    @Override
-    public boolean isEnchantable(ItemStack stack) {
-        return false;
-    }
-
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("tooltip.abunchoftotems.totem_of_vitality.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
-    }
-
-    @Override
-    public Rarity getRarity(ItemStack stack) {
-        return Rarity.RARE;
     }
 }

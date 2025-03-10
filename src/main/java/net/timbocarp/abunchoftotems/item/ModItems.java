@@ -28,6 +28,8 @@ public class ModItems {
             new TotemOfResilienceItem(new FabricItemSettings().maxCount(1)));
     public static final Item TOTEM_OF_WISDOM = registerItem("totem_of_wisdom",
             new TotemOfWisdomItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TOTEM_OF_CONDUCTIVITY = registerItem("totem_of_conductivity",
+            new TotemOfConductivityItem(new FabricItemSettings().maxDamage(31)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -47,6 +49,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_VITALITY);
         entries.add(ModItems.TOTEM_OF_RESILIENCE);
         entries.add(ModItems.TOTEM_OF_WISDOM);
+        entries.add(ModItems.TOTEM_OF_CONDUCTIVITY);
     }
 
     public static void registerModItems(){
