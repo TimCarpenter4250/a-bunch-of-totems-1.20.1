@@ -15,8 +15,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class TotemOfTimeItem extends AbstractChargeItem {
-    public TotemOfTimeItem(Settings settings) {
+public class TotemOfTheCosmosItem extends AbstractChargeItem {
+    public TotemOfTheCosmosItem(Settings settings) {
         super(settings);
     }
     ClientWorld clientWorld;
@@ -58,7 +58,7 @@ public class TotemOfTimeItem extends AbstractChargeItem {
 
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        tooltip.add(Text.translatable("tooltip.abunchoftotems.totem_of_time.tooltip"));
+        tooltip.add(Text.translatable("tooltip.abunchoftotems.totem_of_the_cosmos.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);
     }
 }
