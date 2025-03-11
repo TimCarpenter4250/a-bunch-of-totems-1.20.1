@@ -36,6 +36,8 @@ public class ModItems {
             new TotemOfTheDefiantItem(new FabricItemSettings().maxCount(1)));
     public static final Item TOTEM_OF_THE_COWARDLY = registerItem("totem_of_the_cowardly",
             new TotemOfTheCowardlyItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TOTEM_OF_THE_BAT = registerItem("totem_of_the_bat",
+            new TotemOfTheBatItem(new FabricItemSettings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -61,6 +63,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_THE_COSMOS);
         entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
         entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
+        entries.add(ModItems.TOTEM_OF_THE_BAT);
     }
 
     public static void registerModItems(){
