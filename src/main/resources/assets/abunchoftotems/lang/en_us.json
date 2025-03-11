@@ -17,6 +17,7 @@
   "item.abunchoftotems.totem_of_combustion": "Totem of Combustion",
   "item.abunchoftotems.totem_of_enlightenment": "Totem of Enlightenment",
   "item.abunchoftotems.totem_of_gravity": "Totem of Gravity",
+  "item.abunchoftotems.totem_of_rime": "Totem of Rime",
 
   "tooltip.abunchoftotems.totem_of_fortune.tooltip": "Right-click to grant Luck for 30 seconds",
   "tooltip.abunchoftotems.totem_of_jamming.tooltip": "Right-click to play a random music disc!",
@@ -36,5 +37,6 @@
   "tooltip.abunchoftotems.totem_of_combustion.tooltip2": "your location, killing you instantly",
   "tooltip.abunchoftotems.totem_of_enlightenment.tooltip1": "Right-click to apply Glowing to all mobs",
   "tooltip.abunchoftotems.totem_of_enlightenment.tooltip2": "within 50 blocks for 20 seconds",
-  "tooltip.abunchoftotems.totem_of_gravity.tooltip": "Hold right-click to levitate all mobs within 16 blocks"
+  "tooltip.abunchoftotems.totem_of_gravity.tooltip": "Hold right-click to levitate all mobs within 16 blocks",
+  "tooltip.abunchoftotems.totem_of_rime.tooltip": "Right-click to freeze all mobs within 12 blocks for 15 seconds"
 }

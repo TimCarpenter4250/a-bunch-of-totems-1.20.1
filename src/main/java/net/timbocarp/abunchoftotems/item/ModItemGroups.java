@@ -29,6 +29,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_COMBUSTION);
                         entries.add(ModItems.TOTEM_OF_ENLIGHTENMENT);
                         entries.add(ModItems.TOTEM_OF_GRAVITY);
+                        entries.add(ModItems.TOTEM_OF_RIME);
 
 
                     }).build());

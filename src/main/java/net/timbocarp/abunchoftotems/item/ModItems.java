@@ -44,6 +44,8 @@ public class ModItems {
             new TotemOfEnlightenmentItem(new FabricItemSettings().maxDamage(15)));
     public static final Item TOTEM_OF_GRAVITY = registerItem("totem_of_gravity",
             new TotemOfGravityItem(new FabricItemSettings().maxDamage(1800)));
+    public static final Item TOTEM_OF_RIME = registerItem("totem_of_rime",
+            new TotemOfRimeItem(new FabricItemSettings().maxDamage(11)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -55,6 +57,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
         entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
         entries.add(ModItems.TOTEM_OF_COMBUSTION);
+        entries.add(ModItems.TOTEM_OF_RIME);
     }
 
     private static void addItemsToToolsTabItemGroup(FabricItemGroupEntries entries){
@@ -74,6 +77,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_COMBUSTION);
         entries.add(ModItems.TOTEM_OF_ENLIGHTENMENT);
         entries.add(ModItems.TOTEM_OF_GRAVITY);
+        entries.add(ModItems.TOTEM_OF_RIME);
     }
 
     public static void registerModItems(){

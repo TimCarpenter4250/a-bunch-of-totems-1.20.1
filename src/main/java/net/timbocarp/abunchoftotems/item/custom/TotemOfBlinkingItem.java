@@ -100,7 +100,7 @@ public class TotemOfBlinkingItem extends Item {
                 user.incrementStat(Stats.USED.getOrCreateStat(this));
                 if (!user.getAbilities().creativeMode) {
                     itemStack.setDamage(itemStack.getDamage() + 1);
-                    if (itemStack.getDamage() == 16) {
+                    if (itemStack.getDamage() == this.getMaxDamage() + 1) {
                         itemStack.decrement(1);
 
                         world.playSound(
