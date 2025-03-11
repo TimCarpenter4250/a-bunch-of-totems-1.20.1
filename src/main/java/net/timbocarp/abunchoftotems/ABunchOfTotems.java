@@ -14,7 +14,6 @@ public class ABunchOfTotems implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModLootTableModifiers.modifyLootTables();
