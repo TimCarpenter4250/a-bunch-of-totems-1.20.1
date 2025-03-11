@@ -14,6 +14,7 @@
   "item.abunchoftotems.totem_of_the_defiant": "Totem of The Defiant",
   "item.abunchoftotems.totem_of_the_cowardly": "Totem of The Cowardly",
   "item.abunchoftotems.totem_of_the_bat": "Totem of The Bat",
+  "item.abunchoftotems.totem_of_combustion": "Totem of Combustion",
 
   "tooltip.abunchoftotems.totem_of_fortune.tooltip": "Right-click to grant Luck for 30 seconds",
   "tooltip.abunchoftotems.totem_of_jamming.tooltip": "Right-click to play a random music disc!",
@@ -28,5 +29,7 @@
   "tooltip.abunchoftotems.totem_of_the_cosmos.tooltip": "Hold right-click to rapidly move the Sun and Moon",
   "tooltip.abunchoftotems.totem_of_the_defiant.tooltip": "While in your inventory, gain Strength while below half health",
   "tooltip.abunchoftotems.totem_of_the_cowardly.tooltip": "While in your inventory, gain Speed while below half health",
-  "tooltip.abunchoftotems.totem_of_the_bat.tooltip": "Grants Night Vision while held"
+  "tooltip.abunchoftotems.totem_of_the_bat.tooltip": "Grants Night Vision while held",
+  "tooltip.abunchoftotems.totem_of_combustion.tooltip1": "Right-click to create a massive explosion on",
+  "tooltip.abunchoftotems.totem_of_combustion.tooltip2": "your location, killing you instantly"
 }

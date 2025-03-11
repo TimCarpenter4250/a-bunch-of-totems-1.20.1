@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
                         entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
                         entries.add(ModItems.TOTEM_OF_THE_BAT);
+                        entries.add(ModItems.TOTEM_OF_COMBUSTION);
 
 
                     }).build());
