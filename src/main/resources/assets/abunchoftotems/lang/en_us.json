@@ -19,6 +19,7 @@
   "item.abunchoftotems.totem_of_gravity": "Totem of Gravity",
   "item.abunchoftotems.totem_of_rime": "Totem of Rime",
   "item.abunchoftotems.totem_of_hellfire": "Totem of Hellfire",
+  "item.abunchoftotems.totem_of_the_beastmaster": "Totem of The Beastmaster",
 
   "tooltip.abunchoftotems.totem_of_fortune.tooltip": "Right-click to grant Luck for 30 seconds",
   "tooltip.abunchoftotems.totem_of_jamming.tooltip": "Right-click to play a random music disc!",
@@ -30,7 +31,7 @@
   "tooltip.abunchoftotems.totem_of_wisdom.tooltip": "Right-click to consume and gain 25 levels",
   "tooltip.abunchoftotems.totem_of_conductivity.tooltip1": "Hold right-click to charge, then release to strike",
   "tooltip.abunchoftotems.totem_of_conductivity.tooltip2": "lightning at your crosshair (128-block range)",
-  "tooltip.abunchoftotems.totem_of_the_cosmos.tooltip": "Hold right-click to rapidly move the Sun and Moon",
+  "tooltip.abunchoftotems.totem_of_the_cosmos.tooltip": "Hold right-click to rapidly move the heavens above",
   "tooltip.abunchoftotems.totem_of_the_defiant.tooltip": "While in your inventory, gain Strength while below half health",
   "tooltip.abunchoftotems.totem_of_the_cowardly.tooltip": "While in your inventory, gain Speed while below half health",
   "tooltip.abunchoftotems.totem_of_the_bat.tooltip": "Grants Night Vision while held",
@@ -40,8 +41,10 @@
   "tooltip.abunchoftotems.totem_of_enlightenment.tooltip2": "within 50 blocks for 20 seconds",
   "tooltip.abunchoftotems.totem_of_gravity.tooltip": "Hold right-click to levitate all mobs within 16 blocks",
   "tooltip.abunchoftotems.totem_of_rime.tooltip": "Right-click to freeze all mobs within 12 blocks for 15 seconds",
-  "tooltip.abunchoftotems.totem_of_hellfire.tooltip1": "Right-click to spread fire and burn all",
+  "tooltip.abunchoftotems.totem_of_hellfire.tooltip1": "Right-click to spread fire and ignite all",
   "tooltip.abunchoftotems.totem_of_hellfire.tooltip2": "mobs within 12 blocks for 12 seconds",
   "tooltip.abunchoftotems.totem_of_hellfire.tooltip3": "",
-  "tooltip.abunchoftotems.totem_of_hellfire.tooltip4": "Right-click on a block to create fire (unlimited use)"
+  "tooltip.abunchoftotems.totem_of_hellfire.tooltip4": "Right-click on a block to create fire (unlimited use)",
+  "tooltip.abunchoftotems.totem_of_the_beastmaster.tooltip1": "Right-click to consume and summon 3",
+  "tooltip.abunchoftotems.totem_of_the_beastmaster.tooltip2": "powerful wolves to fight by your side"
 }
