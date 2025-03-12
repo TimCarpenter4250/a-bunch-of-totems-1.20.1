@@ -5,11 +5,13 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
+import net.timbocarp.abunchoftotems.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -22,8 +24,12 @@ public class TotemOfTheDefiantItem extends Item {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         LivingEntity holder = (LivingEntity) entity;
+        PlayerEntity player = (PlayerEntity) holder;
+
         if(holder.getHealth() <= holder.getMaxHealth() / 2) {
-            holder.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 2, 1, true, false, true));
+            if(!player.getInventory().contains(ModItems.TOTEM_OF_WARDING.getDefaultStack())){
+                holder.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 2, 1, true, false, true));
+            }
         }
     }
 

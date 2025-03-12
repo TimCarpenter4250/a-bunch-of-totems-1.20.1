@@ -14,6 +14,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.Rarity;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
+import net.timbocarp.abunchoftotems.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -27,7 +28,9 @@ public class TotemOfResilienceItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
 
-        user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 10));
+        if(!user.getInventory().contains(ModItems.TOTEM_OF_WARDING.getDefaultStack())) {
+            user.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 10));
+        }
 
         world.playSound(
                 null,
