@@ -24,6 +24,8 @@ public class ModLootTableModifiers {
             new Identifier("minecraft", "chests/pillager_outpost");
     private static final Identifier ABANDONED_MINESHAFT_ID =
             new Identifier("minecraft", "chests/abandoned_mineshaft");
+    private static final Identifier NETHER_FORTRESS_ID =
+            new Identifier("minecraft", "chests/nether_bridge");
 //    private static final Identifier FISHING_JUNK_ID =
 //            new Identifier("minecraft", "gameplay/fishing/junk");
 //    private static final Identifier FISHING_TREASURE_ID =
@@ -74,6 +76,15 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.07f))
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_BAT))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(NETHER_FORTRESS_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.10f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_HELLFIRE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

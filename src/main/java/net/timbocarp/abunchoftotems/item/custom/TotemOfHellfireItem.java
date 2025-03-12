@@ -62,9 +62,19 @@ public class TotemOfHellfireItem extends Item {
 
                 BlockPos pos = entity.getBlockPos();
                 Block existingBlock = world.getBlockState(pos).getBlock();
+                BlockPos below = new BlockPos((int) entity.getX(), (int) entity.getY() - 1, (int) entity.getZ());
+                Block belowBlock = world.getBlockState(below).getBlock();
 
-                if(Objects.equals(existingBlock.toString(), "Block{minecraft:air}")) {
-                    world.setBlockState(pos, Blocks.FIRE.getDefaultState());
+                if(existingBlock.getDefaultState().isReplaceable()) {
+                    if(Objects.equals(belowBlock.toString(), "Block{minecraft:soul_soil}") || Objects.equals(existingBlock.toString(), "Block{minecraft:soul_sand}")) {
+                        world.setBlockState(pos, Blocks.SOUL_FIRE.getDefaultState());
+                    }
+                    else{
+                        world.setBlockState(pos, Blocks.FIRE.getDefaultState());
+                    }
+                }
+                else if(Objects.equals(existingBlock.toString(), "Block{minecraft:soul_sand}")){
+                    world.setBlockState(pos.up(1), Blocks.SOUL_FIRE.getDefaultState());
                 }
             }
         }
