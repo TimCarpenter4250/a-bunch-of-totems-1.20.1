@@ -33,6 +33,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_HELLFIRE);
                         entries.add(ModItems.TOTEM_OF_THE_BEASTMASTER);
                         entries.add(ModItems.TOTEM_OF_WARDING);
+                        entries.add(ModItems.TOTEM_OF_THE_SEA);
 
 
                     }).build());

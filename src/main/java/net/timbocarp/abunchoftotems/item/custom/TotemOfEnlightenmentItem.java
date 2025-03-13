@@ -16,6 +16,7 @@ import net.minecraft.util.Rarity;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.world.World;
+import net.timbocarp.abunchoftotems.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
@@ -34,6 +35,7 @@ public class TotemOfEnlightenmentItem extends Item {
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
+        boolean good = true;
 
         Box effectArea = new Box(
                 user.getX() - EFFECT_RADIUS, user.getY() - EFFECT_RADIUS, user.getZ() - EFFECT_RADIUS,
@@ -43,14 +45,24 @@ public class TotemOfEnlightenmentItem extends Item {
         List<LivingEntity> entities = world.getEntitiesByClass(LivingEntity.class, effectArea, e -> e != user);
 
         for (LivingEntity entity : entities) {
-            entity.addStatusEffect(new StatusEffectInstance(
-                    StatusEffects.GLOWING,
-                    400,
-                    0,
-                    false,
-                    false,
-                    true
-            ));
+            if(entity instanceof PlayerEntity){
+                if(((PlayerEntity) entity).getInventory().contains(ModItems.TOTEM_OF_WARDING.getDefaultStack())){
+                    good = false;
+                }
+            }
+
+            if(good) {
+                entity.addStatusEffect(new StatusEffectInstance(
+                        StatusEffects.GLOWING,
+                        400,
+                        0,
+                        false,
+                        false,
+                        true
+                ));
+            }
+
+            good = true;
         }
 
         world.playSound(

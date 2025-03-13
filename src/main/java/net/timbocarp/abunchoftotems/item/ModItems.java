@@ -52,6 +52,8 @@ public class ModItems {
             new TotemOfTheBeastmasterItem(new FabricItemSettings().maxCount(1)));
     public static final Item TOTEM_OF_WARDING = registerItem("totem_of_warding",
             new TotemOfWardingItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TOTEM_OF_THE_SEA = registerItem("totem_of_the_sea",
+            new TotemOfTheSeaItem(new FabricItemSettings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -88,6 +90,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_RIME);
         entries.add(ModItems.TOTEM_OF_HELLFIRE);
         entries.add(ModItems.TOTEM_OF_WARDING);
+        entries.add(ModItems.TOTEM_OF_THE_SEA);
     }
 
     public static void registerModItems(){
