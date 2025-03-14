@@ -3,7 +3,6 @@ package net.timbocarp.abunchoftotems.item.custom;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSources;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -22,7 +21,6 @@ public class TotemOfWardingItem extends Item {
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         LivingEntity holder = (LivingEntity) entity;
         holder.clearStatusEffects();
-        DamageSources damageSources = world.getDamageSources();
     }
 
     @Override
