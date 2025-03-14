@@ -56,6 +56,8 @@ public class ModItems {
             new TotemOfTheSeaItem(new FabricItemSettings().maxCount(1)));
     public static final Item TOTEM_OF_FALLING = registerItem("totem_of_falling",
             new TotemOfFallingItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TOTEM_OF_THE_PLAGUE = registerItem("totem_of_the_plague",
+            new TotemOfThePlagueItem(new FabricItemSettings().maxCount(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -70,6 +72,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_RIME);
         entries.add(ModItems.TOTEM_OF_HELLFIRE);
         entries.add(ModItems.TOTEM_OF_THE_BEASTMASTER);
+        entries.add(ModItems.TOTEM_OF_THE_PLAGUE);
     }
 
     private static void addItemsToToolsTabItemGroup(FabricItemGroupEntries entries){
