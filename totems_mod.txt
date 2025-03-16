@@ -1,0 +1,100 @@
+A Bunch Of Totems Mod:
+
+
+DONE:
+
++ Totem of Fortune:
+Gives 30 seconds of luck, 16 uses, found in jungle temples
+
++ Totem of The Unseen:
+Gain invisibility while holding
+
++ Totem of Returnal:
+Magic mirror, 4 uses, only works if in the same dimension as spawn point
+
++ Totem of Jamming:
+Plays a random music disc on use, unlimited uses(?)
+
++ Totem of Blinking:
+Teleport to the targeted block on use, found in end cities, 64 uses, 128-block (8-chunk) range
+
++ Totem of Vitality:
+Hold to charge (like a bow). Rapidly regenerate health while charging
+
++ Totem of Resilience:
+Single use. Become invincible for 10 seconds. Found in ancient city chests
+
++ Totem of Wisdom:
+Single use. Gives instant 25 levels. Spawns in stronghold libraries and pillager outposts
+
++ Totem of Conductivity:
+Charge for 1.25 seconds, release to strike lightning at crosshair
+
++ Totem of Time:
+Hold right-click to speed up day/night cycle
+
++ Totem of the Defiant:
+Gain strength below half health while totem is in inventory
+
++ Totem of the Cowardly:
+Gain speed boost below half health while totem is in inventory
+
++ Totem of The Bat:
+Gain night vision while holding. Found in mineshafts
+
++ Totem of Combustion
+Right-click to create massive explosion on your location, kills you instantly
+
++ Totem of Enlightenment:
+Applies glowing mobs with 50 blocks for 20 seconds, 16 uses
+
++ Totem of Gravity:
+Hold right-click to levitate mobs within 16 blocks
+
++ Totem of Rime:
+Freezes all mobs within 12 blocks (slowness, negative jump boost, mining fatigue, freezing) for 15 seconds
+
++ Totem of Hellfire:
+Ignite all mobs within 12 blocks for 12 seconds, can be used as flint and steel infinitely, found in nether fortresses
+
++ Totem of The Beastmaster:
+Right-click to summon 3 powerful wolves (infinite strength 2 and resistance 2)
+
++ Totem of Warding:
+While in inventory, complete immunity to status effects
+
++ Totem of The Sea:
+Gives conduit power and dolphin's grace when held underwater
+
++ Totem of Falling:
+Fall damage immune while held
+
+
+
+PLANNED:
+
+
+
+Totem of Nourishment:
+Can be eaten, multiple uses. Spawn in village chests?
+
+Totem of Fertility:
+Rapidly grows crops near you
+
+Totem of Chance:
+50/50? or 1/6 for positive?
+	Negative ideas:
+		How did we get here for 30 seconds
+	Positive ideas:
+		Netherite gear
+
+Totem of The Plague?:
+idk
+
+Totem of The Sky?:
+idk
+
+Totem of The Deep?:
+idk
+
+Theologian villager that sells totems?
