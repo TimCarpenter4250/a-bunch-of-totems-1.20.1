@@ -33,8 +33,7 @@ public class TotemOfReturnalItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         boolean success = false;
 
-        if (user instanceof ServerPlayerEntity) {
-            ServerPlayerEntity serverPlayer = (ServerPlayerEntity) user;
+        if (user instanceof ServerPlayerEntity serverPlayer) {
 
             BlockPos spawnpoint = serverPlayer.getSpawnPointPosition();
 

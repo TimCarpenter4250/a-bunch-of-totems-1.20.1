@@ -30,8 +30,7 @@ public class TotemOfCombustionItem extends Item {
             itemStack.decrement(1);
         }
 
-        if(world instanceof ServerWorld) {
-            ServerWorld serverWorld = (ServerWorld) world;
+        if(world instanceof ServerWorld serverWorld) {
             serverWorld.createExplosion(user, user.getX(), user.getY(), user.getZ(), 12.0F, true, World.ExplosionSourceType.MOB);
 
             DamageSources damageSources = world.getDamageSources();

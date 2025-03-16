@@ -48,8 +48,7 @@ public class TotemOfBlinkingItem extends Item {
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
 
-        if (user instanceof ServerPlayerEntity) {
-            ServerPlayerEntity serverPlayer = (ServerPlayerEntity) user;
+        if (user instanceof ServerPlayerEntity serverPlayer) {
 
             BlockHitResult targetedBlockResult = getTargetedBlockPos(serverPlayer);
             BlockPos targetedBlock = targetedBlockResult.getBlockPos();
