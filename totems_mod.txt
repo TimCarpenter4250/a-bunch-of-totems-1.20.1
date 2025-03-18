@@ -69,14 +69,14 @@ Gives conduit power and dolphin's grace when held underwater
 + Totem of Falling:
 Fall damage immune while held
 
++ Totem of Nourishment:
+Can be eaten multiple times. Gives 15 hunger and 15 saturation. Spawn in village houses
+
 
 
 PLANNED:
 
 
-
-Totem of Nourishment:
-Can be eaten, multiple uses. Spawn in village chests?
 
 Totem of Fertility:
 Rapidly grows crops near you

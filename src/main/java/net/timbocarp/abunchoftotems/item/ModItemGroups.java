@@ -36,6 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_THE_SEA);
                         entries.add(ModItems.TOTEM_OF_FALLING);
                         entries.add(ModItems.TOTEM_OF_THE_PLAGUE);
+                        entries.add(ModItems.TOTEM_OF_NOURISHMENT);
 
 
                     }).build());

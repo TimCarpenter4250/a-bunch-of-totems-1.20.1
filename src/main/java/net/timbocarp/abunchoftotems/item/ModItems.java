@@ -3,6 +3,7 @@ package net.timbocarp.abunchoftotems.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -58,9 +59,15 @@ public class ModItems {
             new TotemOfFallingItem(new FabricItemSettings().maxCount(1)));
     public static final Item TOTEM_OF_THE_PLAGUE = registerItem("totem_of_the_plague",
             new TotemOfThePlagueItem(new FabricItemSettings().maxCount(1)));
+    public static final Item TOTEM_OF_NOURISHMENT = registerItem("totem_of_nourishment",
+            new TotemOfNourishmentItem(new FabricItemSettings().maxCount(1).maxDamage(15).food(new FoodComponent.Builder().build())));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
+    }
+
+    private static void addItemsToFoodTabItemGroup(FabricItemGroupEntries entries){
+        entries.add(ModItems.TOTEM_OF_NOURISHMENT);
     }
 
     private static void addItemsToCombatTabItemGroup(FabricItemGroupEntries entries){
@@ -103,5 +110,6 @@ public class ModItems {
         ABunchOfTotems.LOGGER.info("Registering mod items for " + ABunchOfTotems.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::addItemsToCombatTabItemGroup);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToToolsTabItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodTabItemGroup);
     }
 }

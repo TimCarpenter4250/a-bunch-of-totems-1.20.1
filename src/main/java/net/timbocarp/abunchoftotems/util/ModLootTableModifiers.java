@@ -26,6 +26,16 @@ public class ModLootTableModifiers {
             new Identifier("minecraft", "chests/abandoned_mineshaft");
     private static final Identifier NETHER_FORTRESS_ID =
             new Identifier("minecraft", "chests/nether_bridge");
+    private static final Identifier VILLAGE_PLAINS_HOUSE_ID =
+            new Identifier("minecraft", "chests/village/village_plains_house");
+    private static final Identifier VILLAGE_SAVANNAH_HOUSE_ID =
+            new Identifier("minecraft", "chests/village/village_savannah_house");
+    private static final Identifier VILLAGE_DESERT_HOUSE_ID =
+            new Identifier("minecraft", "chests/village/village_desert_house");
+    private static final Identifier VILLAGE_TAIGA_HOUSE_ID =
+            new Identifier("minecraft", "chests/village/village_taiga_house");
+    private static final Identifier VILLAGE_SNOWY_HOUSE_ID =
+            new Identifier("minecraft", "chests/village/village_snowy_house");
 //    private static final Identifier FISHING_JUNK_ID =
 //            new Identifier("minecraft", "gameplay/fishing/junk");
 //    private static final Identifier FISHING_TREASURE_ID =
@@ -85,6 +95,16 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.10f))
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_HELLFIRE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(VILLAGE_PLAINS_HOUSE_ID.equals(id) || VILLAGE_SAVANNAH_HOUSE_ID.equals(id) || VILLAGE_DESERT_HOUSE_ID.equals(id) ||
+                    VILLAGE_TAIGA_HOUSE_ID.equals(id) || VILLAGE_SNOWY_HOUSE_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.08f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_NOURISHMENT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }
