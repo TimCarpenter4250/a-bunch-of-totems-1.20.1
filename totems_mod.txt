@@ -4,7 +4,7 @@ A Bunch Of Totems Mod:
 DONE:
 
 + Totem of Fortune:
-Gives 30 seconds of luck, 16 uses, found in jungle temples
+Gives 30 seconds of luck, 16 uses
 
 + Totem of The Unseen:
 Gain invisibility while holding
@@ -69,27 +69,20 @@ Gives conduit power and dolphin's grace when held underwater
 + Totem of Falling:
 Fall damage immune while held
 
++ Totem of The Plague:
+While held, apply wither to any mob that attacks you
+
 + Totem of Nourishment:
-Can be eaten multiple times. Gives 15 hunger and 15 saturation. Spawn in village houses
+Can be eaten multiple times. Gives 15 hunger and 15 saturation. Spawns in village houses
+
++ Totem of Fertility:
+Rapidly grows plants near you, found in jungle temples
 
 
 
 PLANNED:
 
 
-
-Totem of Fertility:
-Rapidly grows crops near you
-
-Totem of Chance:
-50/50? or 1/6 for positive?
-	Negative ideas:
-		How did we get here for 30 seconds
-	Positive ideas:
-		Netherite gear
-
-Totem of The Plague?:
-idk
 
 Totem of The Sky?:
 idk

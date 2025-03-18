@@ -48,8 +48,8 @@ public class ModLootTableModifiers {
             if(JUNGLE_TEMPLE_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.55f))
-                        .with(ItemEntry.builder(ModItems.TOTEM_OF_FORTUNE))
+                        .conditionally(RandomChanceLootCondition.builder(0.33f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_FERTILITY))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

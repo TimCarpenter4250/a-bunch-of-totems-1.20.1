@@ -25,6 +25,7 @@
   "item.abunchoftotems.totem_of_falling": "Totem of Falling",
   "item.abunchoftotems.totem_of_the_plague": "Totem of The Plague",
   "item.abunchoftotems.totem_of_nourishment": "Totem of Nourishment",
+  "item.abunchoftotems.totem_of_fertility": "Totem of Fertility",
 
   "tooltip.abunchoftotems.totem_of_fortune.tooltip": "Right-click to grant Luck for 30 seconds",
   "tooltip.abunchoftotems.totem_of_jamming.tooltip": "Right-click to play a random music disc!",
@@ -58,5 +59,6 @@
   "tooltip.abunchoftotems.totem_of_falling.tooltip": "Grants fall damage immunity while held",
   "tooltip.abunchoftotems.totem_of_the_plague.tooltip1": "While held, inflict Wither II on any",
   "tooltip.abunchoftotems.totem_of_the_plague.tooltip2": "mob that dares to attack you",
-  "tooltip.abunchoftotems.totem_of_nourishment.tooltip": "Can be eaten multiple times"
+  "tooltip.abunchoftotems.totem_of_nourishment.tooltip": "Can be eaten multiple times",
+  "tooltip.abunchoftotems.totem_of_fertility.tooltip": "Hold right-click to rapidly grow plants near you"
 }
