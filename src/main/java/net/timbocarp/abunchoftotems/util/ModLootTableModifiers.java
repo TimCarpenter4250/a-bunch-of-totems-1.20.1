@@ -103,7 +103,7 @@ public class ModLootTableModifiers {
                     VILLAGE_TAIGA_HOUSE_ID.equals(id) || VILLAGE_SNOWY_HOUSE_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.08f))
+                        .conditionally(RandomChanceLootCondition.builder(0.10f))
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_NOURISHMENT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
