@@ -33,6 +33,7 @@ public class TotemOfNourishmentItem extends Item {
         return super.finishUsing(stack, world, user);
     }
 
+    // Credit to Tortugaum for this one: https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/modification-development/3186906-fabric-how-to-make-a-food-that-can-be-eaten-more
     private ItemStack eatFoodPartially(World world, ItemStack stack, LivingEntity user) {
         if (stack.isFood()) {
             PlayerEntity player = (PlayerEntity) user;
