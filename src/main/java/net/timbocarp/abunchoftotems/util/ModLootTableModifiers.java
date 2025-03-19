@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LootTableEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
@@ -36,10 +37,12 @@ public class ModLootTableModifiers {
             new Identifier("minecraft", "chests/village/village_taiga_house");
     private static final Identifier VILLAGE_SNOWY_HOUSE_ID =
             new Identifier("minecraft", "chests/village/village_snowy_house");
-//    private static final Identifier FISHING_JUNK_ID =
-//            new Identifier("minecraft", "gameplay/fishing/junk");
-//    private static final Identifier FISHING_TREASURE_ID =
-//            new Identifier("minecraft", "gameplay/fishing/treasure");
+    private static final Identifier ELDER_GUARDIAN_ID =
+            new Identifier("minecraft", "entities/elder_guardian");
+    private static final Identifier WITHER_ID =
+            new Identifier("minecraft", "entities/wither");
+    private static final Identifier IGLOO_ID =
+            new Identifier("minecraft", "chests/igloo_chest");
 
     public static void modifyLootTables(){
         ABunchOfTotems.LOGGER.info("Modifying loot tables");
@@ -105,6 +108,33 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.10f))
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_NOURISHMENT))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(ELDER_GUARDIAN_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_SEA))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(WITHER_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.12f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_PLAGUE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(IGLOO_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.20f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_RIME))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

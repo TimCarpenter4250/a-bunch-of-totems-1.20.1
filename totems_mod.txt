@@ -52,7 +52,7 @@ Applies glowing mobs with 50 blocks for 20 seconds, 16 uses
 Hold right-click to levitate mobs within 16 blocks
 
 + Totem of Rime:
-Freezes all mobs within 12 blocks (slowness, negative jump boost, mining fatigue, freezing) for 15 seconds
+Freezes all mobs within 12 blocks (slowness, negative jump boost, mining fatigue, freezing) for 15 seconds, spawns in igloos
 
 + Totem of Hellfire:
 Ignite all mobs within 12 blocks for 12 seconds, can be used as flint and steel infinitely, found in nether fortresses
@@ -64,13 +64,13 @@ Right-click to summon 3 powerful wolves (infinite strength 2 and resistance 2)
 While in inventory, complete immunity to status effects
 
 + Totem of The Sea:
-Gives conduit power and dolphin's grace when held underwater
+Gives conduit power and dolphin's grace when held underwater, dropped by elder guardians
 
 + Totem of Falling:
 Fall damage immune while held
 
 + Totem of The Plague:
-While held, apply wither to any mob that attacks you
+While held, apply wither to any mob that attacks you, dropped by the Wither
 
 + Totem of Nourishment:
 Can be eaten multiple times. Gives 15 hunger and 15 saturation. Spawns in village houses

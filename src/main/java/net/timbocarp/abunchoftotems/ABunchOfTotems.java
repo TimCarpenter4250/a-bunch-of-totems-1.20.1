@@ -17,5 +17,6 @@ public class ABunchOfTotems implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModLootTableModifiers.modifyLootTables();
+		com.example.mymod.ModWanderingTraderModifiers.registerTrades();
 	}
 }
