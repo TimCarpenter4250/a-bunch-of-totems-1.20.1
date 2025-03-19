@@ -78,20 +78,20 @@ Can be eaten multiple times. Gives 15 hunger and 15 saturation. Spawns in villag
 + Totem of Fertility:
 Rapidly grows plants near you, found in jungle temples
 
++ Totem of Screaming:
+Hold right-click to make very loud sounds
+
++ Totem of Holding:
+Right-click to open ender chest
+
 
 
 PLANNED:
 
 
 
-Totem of Screaming:
-Hold right-click to make very loud sounds
-
 Totem of The Small:
 While held, become 1 block tall
-
-Totem of Holding:
-Right-click to open ender chest
 
 Totem of The Sky?:
 idk

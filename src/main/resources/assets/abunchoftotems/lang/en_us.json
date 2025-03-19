@@ -27,6 +27,7 @@
   "item.abunchoftotems.totem_of_nourishment": "Totem of Nourishment",
   "item.abunchoftotems.totem_of_fertility": "Totem of Fertility",
   "item.abunchoftotems.totem_of_screaming": "Totem of Screaming",
+  "item.abunchoftotems.totem_of_holding": "Totem of Holding",
 
   "tooltip.abunchoftotems.totem_of_fortune.tooltip": "Right-click to grant Luck for 30 seconds",
   "tooltip.abunchoftotems.totem_of_jamming.tooltip": "Right-click to play a random music disc!",
@@ -62,5 +63,6 @@
   "tooltip.abunchoftotems.totem_of_the_plague.tooltip2": "mob that dares to attack you",
   "tooltip.abunchoftotems.totem_of_nourishment.tooltip": "Can be eaten multiple times",
   "tooltip.abunchoftotems.totem_of_fertility.tooltip": "Hold right-click to rapidly grow plants near you",
-  "tooltip.abunchoftotems.totem_of_screaming.tooltip": "Hold right-click to make very loud sounds"
+  "tooltip.abunchoftotems.totem_of_screaming.tooltip": "Hold right-click to make very loud sounds",
+  "tooltip.abunchoftotems.totem_of_holding.tooltip": "Right-click to open your ender chest"
 }

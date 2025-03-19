@@ -39,6 +39,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_NOURISHMENT);
                         entries.add(ModItems.TOTEM_OF_FERTILITY);
                         entries.add(ModItems.TOTEM_OF_SCREAMING);
+                        entries.add(ModItems.TOTEM_OF_HOLDING);
 
 
                     }).build());

@@ -65,6 +65,8 @@ public class ModItems {
             new TotemOfFertilityItem(new FabricItemSettings().maxDamage(95)));
     public static final Item TOTEM_OF_SCREAMING = registerItem("totem_of_screaming",
             new TotemOfScreamingItem(new FabricItemSettings().maxDamage(95)));
+    public static final Item TOTEM_OF_HOLDING = registerItem("totem_of_holding",
+            new TotemOfHoldingItem(new FabricItemSettings().maxDamage(255)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(ABunchOfTotems.MOD_ID, name), item);
@@ -110,6 +112,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_FALLING);
         entries.add(ModItems.TOTEM_OF_FERTILITY);
         entries.add(ModItems.TOTEM_OF_SCREAMING);
+        entries.add(ModItems.TOTEM_OF_HOLDING);
     }
 
     public static void registerModItems(){
