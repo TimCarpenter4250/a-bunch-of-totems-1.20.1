@@ -84,6 +84,15 @@ PLANNED:
 
 
 
+Totem of Screaming:
+Hold right-click to make very loud sounds
+
+Totem of The Small:
+While held, become 1 block tall
+
+Totem of Holding:
+Right-click to open ender chest
+
 Totem of The Sky?:
 idk
 

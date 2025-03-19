@@ -38,6 +38,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TOTEM_OF_THE_PLAGUE);
                         entries.add(ModItems.TOTEM_OF_NOURISHMENT);
                         entries.add(ModItems.TOTEM_OF_FERTILITY);
+                        entries.add(ModItems.TOTEM_OF_SCREAMING);
 
 
                     }).build());
