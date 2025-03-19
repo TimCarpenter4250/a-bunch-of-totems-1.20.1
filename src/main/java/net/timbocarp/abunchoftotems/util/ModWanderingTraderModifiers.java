@@ -1,4 +1,4 @@
-package com.example.mymod;
+package net.timbocarp.abunchoftotems.util;
 
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.minecraft.item.Items;
