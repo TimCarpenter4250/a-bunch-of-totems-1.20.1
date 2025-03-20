@@ -42,6 +42,10 @@ public class ModLootTableModifiers {
             new Identifier("minecraft", "entities/wither");
     private static final Identifier IGLOO_ID =
             new Identifier("minecraft", "chests/igloo_chest");
+    private static final Identifier ENDER_DRAGON_ID =
+            new Identifier("minecraft", "entities/ender_dragon");
+    private static final Identifier DESERT_TEMPLE_ID =
+            new Identifier("minecraft", "chests/desert_pyramid");
 
     public static void modifyLootTables(){
         ABunchOfTotems.LOGGER.info("Modifying loot tables");
@@ -59,10 +63,17 @@ public class ModLootTableModifiers {
             if(END_CITY_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.10f))
+                        .conditionally(RandomChanceLootCondition.builder(0.07f))
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_BLINKING))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
+
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.07f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_GRAVITY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder2.build());
             }
 
             if(ANCIENT_CITY_ID.equals(id)){
@@ -134,6 +145,33 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.20f))
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_RIME))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(ENDER_DRAGON_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.30f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_COSMOS))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(DESERT_TEMPLE_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.06f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_COMBUSTION))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(ANCIENT_CITY_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.10f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_GRAVITY))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
             }

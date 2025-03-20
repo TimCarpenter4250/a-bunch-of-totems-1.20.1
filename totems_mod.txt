@@ -4,16 +4,16 @@ A Bunch Of Totems Mod:
 DONE:
 
 + Totem of Fortune:
-Gives 30 seconds of luck, 16 uses
+Gives 30 seconds of luck, 16 uses, obtained from wandering trader
 
 + Totem of The Unseen:
 Gain invisibility while holding
 
 + Totem of Returnal:
-Magic mirror, 4 uses, only works if in the same dimension as spawn point
+Magic mirror, 8 uses, only works if in the same dimension as spawn point, obtained from woodland mansion or ender dragon or wandering trader?
 
 + Totem of Jamming:
-Plays a random music disc on use, unlimited uses(?)
+Plays a random music disc on use, unlimited uses, obtained from wandering trader
 
 + Totem of Blinking:
 Teleport to the targeted block on use, found in end cities, 64 uses, 128-block (8-chunk) range
@@ -30,8 +30,8 @@ Single use. Gives instant 25 levels. Spawns in stronghold libraries and pillager
 + Totem of Conductivity:
 Charge for 1.25 seconds, release to strike lightning at crosshair
 
-+ Totem of Time:
-Hold right-click to speed up day/night cycle
++ Totem of The Cosmos:
+Hold right-click to speed up day/night cycle, obtained from ender dragon
 
 + Totem of the Defiant:
 Gain strength below half health while totem is in inventory
@@ -43,13 +43,13 @@ Gain speed boost below half health while totem is in inventory
 Gain night vision while holding. Found in mineshafts
 
 + Totem of Combustion
-Right-click to create massive explosion on your location, kills you instantly
+Right-click to create massive explosion on your location, kills you instantly, obtained from desert temple
 
 + Totem of Enlightenment:
 Applies glowing mobs with 50 blocks for 20 seconds, 16 uses
 
 + Totem of Gravity:
-Hold right-click to levitate mobs within 16 blocks
+Hold right-click to levitate mobs within 16 blocks, obtained from end cities
 
 + Totem of Rime:
 Freezes all mobs within 12 blocks (slowness, negative jump boost, mining fatigue, freezing) for 15 seconds, spawns in igloos
@@ -79,10 +79,10 @@ Can be eaten multiple times. Gives 15 hunger and 15 saturation. Spawns in villag
 Rapidly grows plants near you, found in jungle temples
 
 + Totem of Screaming:
-Hold right-click to make very loud sounds
+Hold right-click to make very loud sounds, obtained from wandering trader
 
 + Totem of Holding:
-Right-click to open ender chest
+Right-click to open ender chest, obtained from wandering trader
 
 
 

@@ -27,5 +27,25 @@ public class ModWanderingTraderModifiers {
                     0f
             ));
         });
+
+        TradeOfferHelper.registerWanderingTraderOffers(2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 64),
+                    new ItemStack(ModItems.TOTEM_OF_JAMMING, 1),
+                    1,
+                    10,
+                    0f
+            ));
+        });
+
+        TradeOfferHelper.registerWanderingTraderOffers(2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 64),
+                    new ItemStack(ModItems.TOTEM_OF_SCREAMING, 1),
+                    1,
+                    10,
+                    0f
+            ));
+        });
     }
 }

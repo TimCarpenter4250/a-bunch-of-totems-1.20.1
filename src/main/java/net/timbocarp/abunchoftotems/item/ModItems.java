@@ -18,7 +18,7 @@ public class ModItems {
     public static final Item TOTEM_OF_JAMMING = registerItem("totem_of_jamming",
             new TotemOfJammingItem(new FabricItemSettings().maxCount(1)));
     public static final Item TOTEM_OF_RETURNAL = registerItem("totem_of_returnal",
-            new TotemOfReturnalItem(new FabricItemSettings().maxDamage(3)));
+            new TotemOfReturnalItem(new FabricItemSettings().maxDamage(7)));
     public static final Item TOTEM_OF_THE_UNSEEN = registerItem("totem_of_the_unseen",
             new TotemOfTheUnseenItem(new FabricItemSettings().maxCount(1)));
     public static final Item TOTEM_OF_BLINKING = registerItem("totem_of_blinking",
