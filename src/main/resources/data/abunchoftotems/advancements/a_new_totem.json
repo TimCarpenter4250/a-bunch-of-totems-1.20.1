@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "abunchoftotems:totem_of_fortune"
+    },
+    "title": {
+      "translate": "advancement.abunchoftotems.a_new_totem.title"
+    },
+    "description": {
+      "translate": "advancement.abunchoftotems.a_new_totem.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "pick_up_tagged_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "abunchoftotems:totem_items"
+          }
+        ]
+      }
+    }
+  }
+}

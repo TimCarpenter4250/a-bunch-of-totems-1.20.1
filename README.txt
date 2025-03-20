@@ -1,5 +1,3 @@
-
-
 ACKNOWLEDGEMENTS:
 
 I used Kaupenjoe's excellent tutorials to help create this mod: https://www.youtube.com/@ModdingByKaupenjoe

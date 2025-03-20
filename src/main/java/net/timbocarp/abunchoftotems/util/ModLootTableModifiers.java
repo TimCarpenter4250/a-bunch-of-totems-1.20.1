@@ -46,6 +46,24 @@ public class ModLootTableModifiers {
             new Identifier("minecraft", "entities/ender_dragon");
     private static final Identifier DESERT_TEMPLE_ID =
             new Identifier("minecraft", "chests/desert_pyramid");
+    private static final Identifier DUNGEON_ID =
+            new Identifier("minecraft", "chests/simple_dungeon");
+    private static final Identifier WOODLAND_MANSION_ID =
+            new Identifier("minecraft", "chests/woodland_mansion");
+    private static final Identifier BASTION_TREASURE_ID =
+            new Identifier("minecraft", "chests/bastion_treasure");
+    private static final Identifier BASTION_HOGLIN_STABLE_ID =
+            new Identifier("minecraft", "chests/bastion_hoglin_stable");
+    private static final Identifier BASTION_BRIDGE_ID =
+            new Identifier("minecraft", "chests/bastion_bridge");
+    private static final Identifier BASTION_OTHER_ID =
+            new Identifier("minecraft", "chests/bastion_other");
+    private static final Identifier STRONGHOLD_CORRIDOR_ID =
+            new Identifier("minecraft", "chests/stronghold_corridor");
+    private static final Identifier STRONGHOLD_CROSSING_ID =
+            new Identifier("minecraft", "chests/stronghold_crossing");
+    private static final Identifier BURIED_TREASURE_ID =
+            new Identifier("minecraft", "chests/buried_treasure");
 
     public static void modifyLootTables(){
         ABunchOfTotems.LOGGER.info("Modifying loot tables");
@@ -83,9 +101,16 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_RESILIENCE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
+
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.07f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_VITALITY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder2.build());
             }
 
-            if(STRONGHOLD_LIBRARY_ID.equals(id) || PILLAGER_OUTPOST_ID.equals(id)){
+            if(STRONGHOLD_LIBRARY_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
                         .conditionally(RandomChanceLootCondition.builder(0.20f))
@@ -101,6 +126,13 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_BAT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
+
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.07f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_UNSEEN))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder2.build());
             }
 
             if(NETHER_FORTRESS_ID.equals(id)){
@@ -167,13 +199,80 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
             }
 
-            if(ANCIENT_CITY_ID.equals(id)){
+            if(DUNGEON_ID.equals(id)){
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.10f))
-                        .with(ItemEntry.builder(ModItems.TOTEM_OF_GRAVITY))
+                        .conditionally(RandomChanceLootCondition.builder(0.09f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_DEFIANT))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
                 tableBuilder.pool(poolBuilder.build());
+
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.09f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_COWARDLY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder2.build());
+
+                LootPool.Builder poolBuilder3 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.09f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_WARDING))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder3.build());
+            }
+
+            if(WOODLAND_MANSION_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.25f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_RETURNAL))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(BASTION_BRIDGE_ID.equals(id) || BASTION_HOGLIN_STABLE_ID.equals(id) || BASTION_OTHER_ID.equals(id) ||
+                    BASTION_TREASURE_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_ENLIGHTENMENT))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(STRONGHOLD_CORRIDOR_ID.equals(id) || STRONGHOLD_CROSSING_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_FALLING))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(BURIED_TREASURE_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.20f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_CONDUCTIVITY))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+            }
+
+            if(PILLAGER_OUTPOST_ID.equals(id)){
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.20f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_WISDOM))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder.build());
+
+                LootPool.Builder poolBuilder2 = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.33f))
+                        .with(ItemEntry.builder(ModItems.TOTEM_OF_THE_BEASTMASTER))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                tableBuilder.pool(poolBuilder2.build());
             }
 
         });

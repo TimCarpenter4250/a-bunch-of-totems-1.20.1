@@ -82,6 +82,7 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
         entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
         entries.add(ModItems.TOTEM_OF_COMBUSTION);
+        entries.add(ModItems.TOTEM_OF_GRAVITY);
         entries.add(ModItems.TOTEM_OF_RIME);
         entries.add(ModItems.TOTEM_OF_HELLFIRE);
         entries.add(ModItems.TOTEM_OF_THE_BEASTMASTER);
@@ -99,13 +100,8 @@ public class ModItems {
         entries.add(ModItems.TOTEM_OF_WISDOM);
         entries.add(ModItems.TOTEM_OF_CONDUCTIVITY);
         entries.add(ModItems.TOTEM_OF_THE_COSMOS);
-        entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
-        entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
         entries.add(ModItems.TOTEM_OF_THE_BAT);
-        entries.add(ModItems.TOTEM_OF_COMBUSTION);
         entries.add(ModItems.TOTEM_OF_ENLIGHTENMENT);
-        entries.add(ModItems.TOTEM_OF_GRAVITY);
-        entries.add(ModItems.TOTEM_OF_RIME);
         entries.add(ModItems.TOTEM_OF_HELLFIRE);
         entries.add(ModItems.TOTEM_OF_WARDING);
         entries.add(ModItems.TOTEM_OF_THE_SEA);

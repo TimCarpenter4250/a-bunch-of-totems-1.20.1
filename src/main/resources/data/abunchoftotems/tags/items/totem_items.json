@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:totem_of_undying",
     "abunchoftotems:totem_of_fortune",
     "abunchoftotems:totem_of_jamming",
     "abunchoftotems:totem_of_returnal",

@@ -64,5 +64,8 @@
   "tooltip.abunchoftotems.totem_of_nourishment.tooltip": "Can be eaten multiple times",
   "tooltip.abunchoftotems.totem_of_fertility.tooltip": "Hold right-click to rapidly grow plants near you",
   "tooltip.abunchoftotems.totem_of_screaming.tooltip": "Hold right-click to make very loud sounds",
-  "tooltip.abunchoftotems.totem_of_holding.tooltip": "Right-click to open your ender chest"
+  "tooltip.abunchoftotems.totem_of_holding.tooltip": "Right-click to open your ender chest",
+
+  "advancement.abunchoftotems.a_new_totem.title": "A New Totem",
+  "advancement.abunchoftotems.a_new_totem.description": "Obtain your first new totem",
 }

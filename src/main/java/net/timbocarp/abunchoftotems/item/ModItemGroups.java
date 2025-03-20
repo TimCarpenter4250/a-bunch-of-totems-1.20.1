@@ -14,32 +14,32 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.totems"))
                     .icon(() -> new ItemStack(ModItems.TOTEM_OF_FORTUNE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.TOTEM_OF_FORTUNE);
-                        entries.add(ModItems.TOTEM_OF_JAMMING);
-                        entries.add(ModItems.TOTEM_OF_RETURNAL);
                         entries.add(ModItems.TOTEM_OF_THE_UNSEEN);
-                        entries.add(ModItems.TOTEM_OF_BLINKING);
-                        entries.add(ModItems.TOTEM_OF_VITALITY);
-                        entries.add(ModItems.TOTEM_OF_RESILIENCE);
                         entries.add(ModItems.TOTEM_OF_WISDOM);
-                        entries.add(ModItems.TOTEM_OF_CONDUCTIVITY);
-                        entries.add(ModItems.TOTEM_OF_THE_COSMOS);
                         entries.add(ModItems.TOTEM_OF_THE_DEFIANT);
                         entries.add(ModItems.TOTEM_OF_THE_COWARDLY);
                         entries.add(ModItems.TOTEM_OF_THE_BAT);
-                        entries.add(ModItems.TOTEM_OF_COMBUSTION);
                         entries.add(ModItems.TOTEM_OF_ENLIGHTENMENT);
                         entries.add(ModItems.TOTEM_OF_GRAVITY);
                         entries.add(ModItems.TOTEM_OF_RIME);
                         entries.add(ModItems.TOTEM_OF_HELLFIRE);
-                        entries.add(ModItems.TOTEM_OF_THE_BEASTMASTER);
                         entries.add(ModItems.TOTEM_OF_WARDING);
                         entries.add(ModItems.TOTEM_OF_THE_SEA);
                         entries.add(ModItems.TOTEM_OF_FALLING);
-                        entries.add(ModItems.TOTEM_OF_THE_PLAGUE);
+                        entries.add(ModItems.TOTEM_OF_BLINKING);
                         entries.add(ModItems.TOTEM_OF_NOURISHMENT);
                         entries.add(ModItems.TOTEM_OF_FERTILITY);
-                        entries.add(ModItems.TOTEM_OF_SCREAMING);
                         entries.add(ModItems.TOTEM_OF_HOLDING);
+                        entries.add(ModItems.TOTEM_OF_THE_BEASTMASTER);
+                        entries.add(ModItems.TOTEM_OF_CONDUCTIVITY);
+                        entries.add(ModItems.TOTEM_OF_RETURNAL);
+                        entries.add(ModItems.TOTEM_OF_COMBUSTION);
+                        entries.add(ModItems.TOTEM_OF_THE_PLAGUE);
+                        entries.add(ModItems.TOTEM_OF_THE_COSMOS);
+                        entries.add(ModItems.TOTEM_OF_VITALITY);
+                        entries.add(ModItems.TOTEM_OF_RESILIENCE);
+                        entries.add(ModItems.TOTEM_OF_SCREAMING);
+                        entries.add(ModItems.TOTEM_OF_JAMMING);
 
 
                     }).build());
