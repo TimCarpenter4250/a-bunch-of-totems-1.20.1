@@ -32,13 +32,13 @@ public class TotemOfTheBeastmasterItem extends Item {
         ItemStack itemStack = user.getStackInHand(hand);
 
         WolfEntity wolf1 = new WolfEntity(EntityType.WOLF, world);
-        wolf1.setPos(user.getX() + 1, user.getY(), user.getZ());
+        wolf1.setPos(user.getX() + 1, user.getY() + 0.5, user.getZ());
 
         WolfEntity wolf2 = new WolfEntity(EntityType.WOLF, world);
-        wolf2.setPos(user.getX() - 1, user.getY(), user.getZ() - 1);
+        wolf2.setPos(user.getX() - 1, user.getY() + 0.5, user.getZ() - 1);
 
         WolfEntity wolf3 = new WolfEntity(EntityType.WOLF, world);
-        wolf3.setPos(user.getX() - 1, user.getY(), user.getZ() + 1);
+        wolf3.setPos(user.getX() - 1, user.getY() + 0.5, user.getZ() + 1);
 
         WolfEntity[] wolves = {wolf1, wolf2, wolf3};
 
