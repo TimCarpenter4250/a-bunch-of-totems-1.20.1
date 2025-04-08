@@ -25,7 +25,7 @@ public class TotemOfTheSeaItem extends Item {
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         LivingEntity holder = (LivingEntity) entity;
         PlayerEntity player = (PlayerEntity) holder;
-        if((selected || holder.getOffHandStack().isOf(ModItems.TOTEM_OF_THE_UNSEEN))){
+        if((selected || holder.getOffHandStack().isOf(ModItems.TOTEM_OF_THE_SEA))){
             if(!player.getInventory().contains(ModItems.TOTEM_OF_WARDING.getDefaultStack())){
                 if(player.isSubmergedInWater()) {
                     holder.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, 2, 0, true, false, true));

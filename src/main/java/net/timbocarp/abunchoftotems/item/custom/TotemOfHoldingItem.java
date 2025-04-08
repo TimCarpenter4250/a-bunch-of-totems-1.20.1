@@ -30,6 +30,16 @@ public class TotemOfHoldingItem extends Item {
 
         if (!world.isClient) {
             user.openHandledScreen(createScreenHandler(user));
+            world.playSound(
+                    null,
+                    user.getX(),
+                    user.getY(),
+                    user.getZ(),
+                    SoundEvents.BLOCK_ENDER_CHEST_OPEN,
+                    SoundCategory.NEUTRAL,
+                    0.5F,
+                    1.0F
+            );
         }
 
         user.incrementStat(Stats.USED.getOrCreateStat(this));
