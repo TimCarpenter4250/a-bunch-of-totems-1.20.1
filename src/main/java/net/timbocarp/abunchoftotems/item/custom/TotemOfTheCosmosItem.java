@@ -57,6 +57,11 @@ public class TotemOfTheCosmosItem extends AbstractChargeItem {
     }
 
     @Override
+    public boolean isFireproof() {
+        return true;
+    }
+
+    @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         tooltip.add(Text.translatable("tooltip.abunchoftotems.totem_of_the_cosmos.tooltip"));
         super.appendTooltip(stack, world, tooltip, context);

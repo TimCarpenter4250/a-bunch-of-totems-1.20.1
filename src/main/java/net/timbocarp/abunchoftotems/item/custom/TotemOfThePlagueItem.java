@@ -23,6 +23,11 @@ public class TotemOfThePlagueItem extends Item {
     }
 
     @Override
+    public boolean isFireproof() {
+        return true;
+    }
+
+    @Override
     public Rarity getRarity(ItemStack stack) {
         return Rarity.RARE;
     }

@@ -48,7 +48,7 @@ public class TotemOfTheBeastmasterItem extends Item {
             wolves[i].setCollarColor(DyeColor.WHITE);
             wolves[i].addStatusEffect(new StatusEffectInstance(
                     StatusEffects.STRENGTH,
-                    99999999,
+                    999999999,
                     1,
                     true,
                     false,
@@ -56,7 +56,7 @@ public class TotemOfTheBeastmasterItem extends Item {
             ));
             wolves[i].addStatusEffect(new StatusEffectInstance(
                     StatusEffects.RESISTANCE,
-                    99999999,
+                    999999999,
                     1,
                     true,
                     false,
